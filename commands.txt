@@ -1,0 +1,63 @@
+Channel Service
+~~~~~~~~~~~~~~~
+REGISTER <channel>
+INFO <channel>
+ADDUSER <channel> <nickname> [<level>]
+DELUSER <channel> <nickname>
+ACCESS <channel> [<-lm|-ls|-uh|-min x|-max n>] [<match>]
+SETUSER <nickname> <aop|aoh|aov|protect|level|suspend> <value>
+OP <channel> [<nickname> [<nickname>]]
+DEOP <channel> [<nickname> [<nickname>]]
+HALFOP <channel> [<nickname> [<nickname>]]
+DEHALFOP <channel> [<nickname> [<nickname>]]
+VOICE <channel> [<nickname> [<nickname>]]
+DEVOICE <channel> [<nickname> [<nickname>]]
+SEEK <channel> [<-min x|-max x|-online>] <message>
+KICK <channel> <nickname> [<reason>]
+DROP <channel>
+DELME <channel> <nickname>
+JOIN <channel>
+PART <channel>
+LIST [<nickname>]
+MDEOP <channel>
+MDEHALFOP <channel>
+MDEVOICE <channel>
+TOPIC <channel> <topic>
+BAN <channel> [<-level x|-hours x|-mins x|-nokick|-noexpire>] <nickname|banmask> [<reason>]
+LISTBAN <channel> [<-whoset|-whenset|-reason>] [<match>]
+
+
+Nickname Service
+~~~~~~~~~~~~~~~~
+COMMANDS
+REGISTER <password> <email address>
+INFO <nickname>
+DROP <password>
+AUTH <password>
+ID <password>
+IDENTIFY <password>
+ACCESS [<nickname>]
+KILL <nickname> <password> [<message>]
+SET <usemsg|aop|autokill|url|email|showemail|showhost|autoadd|noteonadd|noteondel|noteonset> <value>
+!HOST
+!LINK
+!WHOIS
+
+
+Operator Service
+~~~~~~~~~~~~~~~~
+EVAL <commands>
+RAW <raw message>
+COMMANDS
+KICK <channel> <nickname> [<message>]
+KILLCLONE <nickname> [<message>]
+KILL <nickname> [<message>]
+GLOBAL <message>
+STATUS
+MSG <from-nickname> <nickname|channel> <message>
+CLIST <nickname> [<to-nickname>]
+LISTADMIN [<-online|nickname>]
+VHOST <add|del|list> <nickname|match> [<-nick|-host|-enabled|-disabled>] [<vhost>]
+REHASH
+CHANLIST [<-topic>] [<match>]
+NICKLIST [<-host>] [<match>]
